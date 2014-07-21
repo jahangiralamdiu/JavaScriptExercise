@@ -98,12 +98,20 @@ and open the template in the editor.
            
            function addTwoNumbers ()
            {
-               var sum = 2+3;
+               var sum = arguments[0]+arguments[1];
                
                return sum;
            }
            
-           document.write(addTwoNumbers ());
+           document.write(addTwoNumbers (2, 6));
+           
+           var addThreeeNumbers = function (){
+               return arguments[0]+arguments[1]+arguments[3];
+           };
+           //self executio
+           console.log((function(){
+               return arguments[0]+ arguments[1]+arguments[2];
+           })(50,5,12));
            
         </script>
         
