@@ -174,16 +174,22 @@
     ;(function(){
         
         try {
-            var alABBR = document.getElementsByTagName('abbr');
+            var alABBR = window.document.getElementsByTagName('abbr');
             
             var total = alABBR.length;
             
-            for(var i = 0; i<=total; i++)
+            for(i = 0; i<total; i++)
             {
                 console.log(alABBR[i].innerHTML);
+                
+                console.log(alABBR[i].nodeType);
+                
             }
             
             
+            var zenSupporting = document.getElementById('zen-supporting');
+            console.log(zenSupporting.innerHTML);
+            zenSupporting.innerHTML = "<b>Hello, I've replaced you! </b>";
         }catch(e) {
             
             console.log(e.message);
