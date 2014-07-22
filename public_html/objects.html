@@ -96,8 +96,6 @@ and open the template in the editor.
             
             console.log(myCar.drive());
             
-            // Defining Object using Object.create()
-            
             console.log(this);
             
             var ftfl = {
@@ -113,6 +111,15 @@ and open the template in the editor.
             var aFTFL = ftfl.jahangir;
             
             console.log(aFTFL());
+            
+            // Defining Object using Object.create()
+            
+            var Person = {
+                kind : 'human'
+            };
+            
+            var sajia = Object.create(Person);
+            console.log(sajia.kind);
             
         </script>
         
