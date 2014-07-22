@@ -127,7 +127,19 @@ and open the template in the editor.
                return counter;
            }
            
-           ;(function(){alert('hello')})();
+           //;(function(){alert('hello')})();
+           
+           function init() {
+               var name = "Mozilla";
+               
+               function displayName (){
+                   alert(name);
+               }
+               
+               displayName();
+           }
+           
+           console.log(init());
            
         </script>
         
