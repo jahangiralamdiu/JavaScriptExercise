@@ -6,46 +6,30 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Java Script objects</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <script>
             
-            var anArray = new Array ("apple", "banana", "orrange");
+            var car = new Object();
             
-            var aDiffArr = new Array(5);
+            car.name = 'Audi';
             
-            aDiffArr[0]=2;
+            car.wheel = 4;
             
-            aDiffArr[3]=5;
+            car.drive = function () {
+                alert('I am driving');
+            };
             
-            console.log(anArray);
+            console.log(car.wheel);
             
-            console.log(anArray[1]);
-            
-            console.log(anArray.length);
-            
-            console.log(aDiffArr);
-            
-            console.log(aDiffArr.length);
-            
-            //Defining an Array using array literal
-            
-            var anArrLiteral = [];
-            
-            var car = ['sedan',['apple', 'banana', 'orange'], 'ferary'];
-            
-            console.log(typeof anArrLiteral);
-            
-            console.log(car);
-            
-            console.log(car[1][1]);
+            console.log(car.drive());
             
         </script>
         
     </head>
     <body>
- 
+    
     </body>
 </html>
