@@ -178,18 +178,22 @@
             
             var total = alABBR.length;
             
+            var strUL = "<ul>";
+            
             for(i = 0; i<total; i++)
             {
                 console.log(alABBR[i].innerHTML);
                 
                 console.log(alABBR[i].nodeType);
                 
+                strUL += "<li>"+alABBR[i].innerHTML+"</li>";
+                
             }
-            
-            
+            strUL +="</ul>";
             var zenSupporting = document.getElementById('zen-supporting');
             console.log(zenSupporting.innerHTML);
             zenSupporting.innerHTML = "<b>Hello, I've replaced you! </b>";
+            zenSupporting.setAttribute('style', 'background-color:red');
         }catch(e) {
             
             console.log(e.message);
