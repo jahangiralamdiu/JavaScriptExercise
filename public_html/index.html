@@ -136,10 +136,20 @@ and open the template in the editor.
                    alert(name);
                }
                
-               displayName();
+               return displayName();
            }
            
            console.log(init());
+           
+           //Function construction
+           
+           var func = new Function ("x", "y", "return x*y"); //The last stateement is the function body          
+       
+           
+           console.log(func(2,3));
+
+           
+           
            
         </script>
         
