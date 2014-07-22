@@ -28,9 +28,48 @@ and open the template in the editor.
             
             //Object Literal
             
-            var fruits = {};
+            var fruits = {
+                
+                name :'Apple',
+                color :'red',
+                taste : 'sweet',
+                
+                satisfy : function(){
+                   return 'Satisfying Hunger';
+                }
+                
+                
+            };
             
             console.log(typeof fruits);
+            
+            console.log(fruits.name);
+            
+            console.log(fruits.satisfy());
+            
+            var student = {
+                name : 'bappa',
+                
+                id : 'FTFL01',
+                
+                email : 'bappa@ftfl.com',
+                
+                tools : {
+                    
+                    laptop : false,
+                    
+                    desktop : {
+                        monitor : '17 inch',
+                        
+                        cpu : 'cori5'
+                    }
+                }
+                
+                
+            } ;
+            
+            console.log(student.tools.desktop.monitor);
+            console.log(student['tools']['desktop']['monitor']);
             
         </script>
         
