@@ -118,8 +118,10 @@ and open the template in the editor.
                 kind : 'human'
             };
             
-            var sajia = Object.create(Person);
-            console.log(sajia.kind);
+            var sajia = Object.create(Person, {age:{value:13}});
+            console.log(sajia.age);
+            
+            console.log(Person.age);
             
         </script>
         
