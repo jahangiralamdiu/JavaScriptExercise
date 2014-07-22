@@ -71,6 +71,22 @@ and open the template in the editor.
             console.log(student.tools.desktop.monitor);
             console.log(student['tools']['desktop']['monitor']);
             
+            //Defining object using a constructor function
+            
+            function Car(make, model, year)
+            {
+                this.make = make;
+                
+                this.model = model;
+                
+                this.year = year;
+            }
+            
+            var myCar = new Car("Eagle", "Talon Tsi", 1999);
+            
+            console.log(typeof Car);
+            console.log(typeof myCar);
+            
         </script>
         
     </head>
