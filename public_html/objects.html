@@ -80,12 +80,19 @@ and open the template in the editor.
                 this.model = model;
                 
                 this.year = year;
+                
+                this.drive = function(){
+                    return "I m driving "+this.make;
+                };
             }
             
             var myCar = new Car("Eagle", "Talon Tsi", 1999);
             
+            
             console.log(typeof Car);
             console.log(typeof myCar);
+            
+            console.log(myCar.drive());
             
         </script>
         
